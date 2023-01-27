@@ -50,7 +50,7 @@ public class MovieController {
     }
 
     @GetMapping ("/get-all-movies")
-    public ResponseEntity findAllMovie(){
+    public ResponseEntity findAllMovies(){
         return new ResponseEntity(movieService.getAllMovie(),HttpStatus.FOUND);
     }
 
@@ -60,7 +60,7 @@ public class MovieController {
     }
 
     @DeleteMapping ("/delete-all-directors")
-    public ResponseEntity deleteAllDirector(){
+    public ResponseEntity deleteAllDirectors(){
         return new ResponseEntity(movieService.deleteAllDirector(),HttpStatus.ACCEPTED);
     }
 
